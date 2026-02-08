@@ -9,11 +9,14 @@
         .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 400px; margin: auto; }
         h1 { color: #2e7d32; font-size: 26px; margin-bottom: 5px; }
         .subtitle { color: #666; font-size: 14px; margin-bottom: 25px; }
+        /* クラス適用：ボタンのデザイン */
         .btn { display: inline-block; background-color: #2e7d32; color: white; padding: 18px 35px; text-decoration: none; border-radius: 35px; font-weight: bold; font-size: 18px; margin: 20px 0; transition: 0.3s; box-shadow: 0 4px 10px rgba(46, 125, 50, 0.3); }
         .btn:hover { background-color: #1b5e20; transform: translateY(-2px); }
         .guide { text-align: left; background: #fffde7; padding: 20px; border-radius: 12px; font-size: 14px; line-height: 1.6; border: 1px solid #fff59d; }
         .guide h2 { font-size: 17px; margin-top: 0; color: #f57f17; display: flex; align-items: center; }
-        .step { margin-bottom: 8px; display: block; }
+        .step { margin-bottom: 12px; display: block; border-bottom: 1px dashed #eee; padding-bottom: 8px; }
+        .step:last-child { border-bottom: none; }
+        .highlight { font-weight: bold; color: #d32f2f; }
     </style>
 </head>
 <body>
@@ -23,15 +26,16 @@
         
         <p>最新のアプリ(APK)をダウンロードして、インストールを完了させてください。</p>
 
-        <a href="https://github.com/thousand35/kakeibomaster_app/releases/latest/download/app-release.apk">最新版をダウンロード</a>
+        <a href="https://github.com/thousand35/kakeibomaster_app/releases/latest/download/app-release.apk" class="btn">最新版をダウンロード</a>
+
         <div class="guide">
             <h2>⚙️ インストール手順</h2>
             <span class="step">① 上のボタンを押し、ファイルを保存。</span>
-            <span class="step">  Filesアプリのダウンロードにapp_release.apkが保存される。</span>
-            <span class="step">② ファイルを開き「インストール」をタップ。</span>
-            <span class="step">③ 「不明なアプリ」の警告が出た場合は「許可」または「無視してインストール」を選択してください。</span>
+            <span class="step">② スマホの<span class="highlight">「ファイル」アプリ</span>を開き、<span class="highlight">「ダウンロード」</span>の項目を確認。</span>
+            <span class="step">③ <span class="highlight">「app-release.apk」</span>をタップ。</span>
+            <span class="step">④ 「不明なアプリ」の警告が出た場合は「設定」→「この提供元を許可」をONにしてから、再度インストールしてください。</span>
         </div>
-        <p style="font-size: 11px; color: #999; margin-top: 20px;">※Google Playストア外からの配布のため警告が出ますが、中身は安全です。</p>
+        <p style="font-size: 11px; color: #999; margin-top: 20px;">※Playストア外からの配布のため警告が出ますが、中身は安全です。</p>
     </div>
 </body>
 </html>
